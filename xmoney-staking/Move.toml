@@ -1,0 +1,13 @@
+[package]
+name = "xmoney_staking"
+edition = "2024.beta"
+published-at = "0x3cc209ca80fde4e68f9abbae4776abc57de7bb3da33bdb8cbf6a66740ff81bd8"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "mainnet-v1.57.2", override = true }
+MoveStdlib = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/move-stdlib", rev = "mainnet-v1.57.2", override = true }
+xmoney_bridge = { local = "../xmoney-bridge", override = true }
+
+[addresses]
+xmoney_staking = "0x3cc209ca80fde4e68f9abbae4776abc57de7bb3da33bdb8cbf6a66740ff81bd8"
+xmoney_bridge  = "0x8db9d9dc5cd5723ee55725869620073e28f88ddf3c360a512ebd73cb46f1903d"
